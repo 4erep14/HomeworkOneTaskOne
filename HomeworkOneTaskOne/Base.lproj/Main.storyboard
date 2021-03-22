@@ -15,18 +15,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAR-aG-6A9">
+                                <rect key="frame" x="16" y="16" width="343" height="311"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OG6-q0-icx">
+                                <rect key="frame" x="16" y="340" width="343" height="311"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OG6-q0-icx" secondAttribute="bottom" constant="16" id="8eM-6v-yoe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BAR-aG-6A9" secondAttribute="trailing" constant="16" id="AHv-5H-c57"/>
+                            <constraint firstItem="BAR-aG-6A9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="dTd-hb-pXq"/>
+                            <constraint firstItem="OG6-q0-icx" firstAttribute="height" secondItem="BAR-aG-6A9" secondAttribute="height" id="eba-hh-OMb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OG6-q0-icx" secondAttribute="trailing" constant="16" id="ken-ht-6zF"/>
+                            <constraint firstItem="OG6-q0-icx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mSx-Dt-hlO"/>
+                            <constraint firstItem="OG6-q0-icx" firstAttribute="top" secondItem="BAR-aG-6A9" secondAttribute="bottom" constant="13" id="rbp-i2-XD8"/>
+                            <constraint firstItem="BAR-aG-6A9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sh4-eJ-o5D"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="124"/>
+            <point key="canvasLocation" x="138.40000000000001" y="123.68815592203899"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
